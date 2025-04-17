@@ -1,0 +1,34 @@
+Main 
+
+ void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+ Declare  array and set size to user input
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
+        int[] numbers = new int[size];
+
+Fill the array with numbers
+        ArrayUtilities.fillArray(numbers);
+
+    Print the numbers in the array
+        ArrayUtilities.printArray(numbers);
+
+     Display  sum of array elements
+        int sum = ArrayUtilities.sumArray(numbers);
+        System.out.println("Sum of array elements: " + sum);
+
+     a validated number to search
+        int validatedNumber = ArrayUtilities.validateNumber(100, 1000);
+
+     Search for  number in the array
+        boolean found = ArrayUtilities.searchInArray(numbers, size, validatedNumber);
+
+     Display the result of the search
+        if (found) {
+            System.out.println("Number " + validatedNumber + " found in the array.");
+        } else {
+            System.out.println("Number " + validatedNumber + " not found in the array.");
+        }
+    }
+}
