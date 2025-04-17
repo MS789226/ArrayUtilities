@@ -1,1 +1,1 @@
-# ArrayUtilities
+# Algorithms class ArrayUtilities
